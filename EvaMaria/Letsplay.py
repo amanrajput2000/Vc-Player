@@ -91,7 +91,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔄 Processing**")
+            huehue = await replied.reply("**🔍 **")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -106,12 +106,12 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
+                    photo="https://te.legra.ph/file/c243aaf5b07e108ee0b0f.jpg",
                     caption=f"""
 **#⃣ Song Added  {pos}
-🏷️ Title: [{songname}]({link})
-💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+🏷️ 𝐓𝐢𝐭𝐭𝐥𝐞: [{songname}]({link})
+💬 𝐂𝐇𝐀𝐓 𝐈𝐃: {chat_id}
+🎧 𝐏𝐥𝐚𝐲𝐞𝐝 𝐁𝐲: {m.from_user.mention}**
 """,
                 )
             else:
@@ -128,10 +128,11 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/6213d2673486beca02967.png",
                     caption=f"""
-**▶ Start Playing Songs
-🏷️ Title: [{songname}]({link})
-💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+**▶ Started Playing Songs
+🏷️ 𝐓𝐢𝐭𝐭𝐥𝐞: [{songname}]({link})
+💬 𝐂𝐇𝐀𝐓 𝐈𝐃: {chat_id}
+🎧 𝐏𝐥𝐚𝐲𝐞𝐝 𝐛𝐲: {m.from_user.mention}
+❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
 """,
                 )
 
