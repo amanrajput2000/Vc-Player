@@ -126,7 +126,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                    photo="https://te.legra.ph/file/7390d7342c53d8368d139.jpg",
                     caption=f"""
 **▶ Started Playing Songs
 🏷️ 𝐓𝐢𝐭𝐭𝐥𝐞: [{songname}]({link})
@@ -138,14 +138,14 @@ async def play(client, m: Message):
 
     else:
         if len(m.command) < 2:
-            await m.reply("Reply to Audio File or provide something for Searching ...")
+            await m.reply("𝗿𝗲𝗽𝗹𝘆 𝘁𝗼 𝗮𝗻𝘆 𝗳𝗶𝗹𝗲 𝗼𝗿 𝗴𝗶𝘃𝗲 𝘆𝗼𝘂𝘁𝘂𝗯𝗲 𝗹𝗶𝗻𝗸 𝘁𝗼 𝘀𝗲𝗮𝗿𝗰𝗵🇮🇳❤️ ...")
         else:
             await m.delete()
             huehue = await m.reply("🔎 Searching...")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await huehue.edit("`Didn't Find Anything for the Given Query`")
+                await huehue.edit("`𝗰𝗮𝗻𝘁 𝗳𝗶𝗻𝗱 𝗮𝗻𝘆𝘁𝗵𝗶𝗻𝗴 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗴𝗶𝘃𝗲𝗻 𝗾𝘂𝗲𝗿𝘆🙂`")
             else:
                 songname = search[0]
                 title = search[0]
@@ -235,7 +235,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
+                    photo="https://te.legra.ph/file/c243aaf5b07e108ee0b0f.jpg",
                     caption=f"""
 **#⃣ Video Queued To  {pos}
 🏷️ Title: [{songname}]({link})
@@ -377,7 +377,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/6213d2673486beca02967.png",
+                        photo="https://te.legra.ph/file/51a0ce9916dfc856fe304.jpg",
                         caption=f"""
 **▶ Start Playing Songs Dari {chat}
 🏷️ Title: [{songname}]({link})
