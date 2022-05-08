@@ -3,11 +3,11 @@ from telegraph import Telegraph
 tele_ = Telegraph()
 
 def telegrapher(a_title: str, content: str) -> str:
-    auth_name = tele_.create_account(short_name="@Mister_Dark_Prince")
+    auth_name = tele_.create_account(short_name="@itzamanrajput")
     resp = tele_.create_page(
         title=a_title,
         author_name=auth_name,
-        author_url="https://t.me/TGFRNDZ",
+        author_url="https://t.me/india_chat_00",
         html_content=content,
     )
     link_ = resp["url"]
