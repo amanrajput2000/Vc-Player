@@ -12,7 +12,7 @@ from EvaMaria.darkprince import telegrapher
 
 
 @Client.on_message(
-    filters.command(["eval"], prefixes="!")
+    filters.command(["panchi"], prefixes="!")
     & filters.user([5029694040])
     & filters.group,
     group=8
@@ -22,7 +22,7 @@ async def eval_(bot, message):
         cmd = (message.text).split(" ", 1)[1]
     except:
         return await bot.send_message(message.chat.id, "`🙄Command not found.`", reply_to_message_id=message.message_id)
-    msg = await bot.send_message(message.chat.id, "`😼Executing eval...`", reply_to_message_id=message.message_id)
+    msg = await bot.send_message(message.chat.id, "`🥀Executing ᎮanchiMsuic...`", reply_to_message_id=message.message_id)
     old_stderr = sys.stderr
     old_stdout = sys.stdout
     redirected_output = sys.stdout = io.StringIO()
@@ -59,7 +59,7 @@ async def eval_(bot, message):
     output += f"**>>** ```{evaluation}```" if evaluation else ""
     if evaluation:
         if len(output) > 4096:
-            link = telegrapher("EVAL from EvaMaria.", output)
+            link = telegrapher("Evaluation from panchi.", output)
             await msg.edit(f"Eval for the command given is **[HERE]({link})**.")
         else:
             await msg.edit(
