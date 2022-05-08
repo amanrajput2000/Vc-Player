@@ -168,10 +168,11 @@ async def play(client, m: Message):
                             photo=f"{thumb}",
                             caption=f"""
 **#⃣ Song Added  {pos}
-🏷️ Title: [{songname}]({url})
-⏱️ Duration: {duration}
-💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+🏷️  𝐓𝐢𝐭𝐭𝐥𝐞: [{songname}]({url})
+⏱️ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: {dura𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧tion}
+💬 𝐂𝐇𝐀𝐓 𝐈𝐃: {chat_id}
+🎧 𝐏𝐥𝐚𝐲𝐞𝐝 𝐛𝐲: {m.from_user.mention}
+❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
@@ -190,10 +191,11 @@ async def play(client, m: Message):
                                 photo=f"{thumb}",
                                 caption=f"""
 **▶ Start Playing Songs
-🏷️ Title: [{songname}]({url})
-⏱️ Duration: {duration}
-💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+🏷️ 𝐓𝐢𝐭𝐭𝐥e: [{songname}]({url})
+⏱️ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: {duration}
+💬 𝐂𝐇𝐀𝐓 𝐈𝐃: {chat_id}
+🎧 𝐏𝐥𝐚𝐲𝐞𝐝 𝐛𝐲: {m.from_user.mention}
+❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
 """,
                             )
                         except Exception as ep:
@@ -208,7 +210,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔄 Processing**")
+            huehue = await replied.reply("**🔍**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -262,7 +264,8 @@ async def vplay(client, m: Message):
 **▶ Start Playing Videos
 🏷️ Title: [{songname}]({link})
 💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+🎧 Requested by: {m.from_user.mention}
+❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
 """,
                 )
 
@@ -273,14 +276,16 @@ async def vplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Searching...")
+            huehue = await m.reply("**🔎")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
                 await huehue.edit(
-                    "**Didn't Find Anything for the Given Query🤷‍♀️**"
+                    "**ᴄᴀɴᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ꜰᴏʀ ᴛʜᴇ  ɢɪᴠᴇɴ Qᴜᴇʀʏ
+
+               🤷‍♀️**"
                 )
             else:
                 songname = search[0]
@@ -307,7 +312,8 @@ async def vplay(client, m: Message):
 🏷️ Title: [{songname}]({url})
 ⏱️ Duration: {duration}
 💬 Chat ID: {chat_id}
-🎧 Requested by: {m.from_user.mention}**
+🎧 Requested by: {m.from_user.mention}
+❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
 """,
                         )
                     else:
