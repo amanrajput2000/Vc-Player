@@ -72,7 +72,8 @@ async def help(client, m: Message):
 🥀 {HNDLR}help - to see a list of commands
 🥀 {HNDLR}play [song title | link youtube | reply audio file] - to play a song
 🥀 {HNDLR}vplay [video title | link youtube | reply video files] - to play videos
-🥀 {HNDLR}playlist to view playlist
+🥀 {HNDLR}dsong [ song name |yt link ]To download any song
+🥀{HNDLR}playlist to view playlist
 🥀 {HNDLR}ping - to check status
 🥀 {HNDLR}resume - to continue playing a song or video
 🥀 {HNDLR}pause - to pause the playback a song or video 
