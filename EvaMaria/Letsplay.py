@@ -169,7 +169,7 @@ async def play(client, m: Message):
                             caption=f"""
 **#⃣ Song Added  {pos}
 🏷️  𝐓𝐢𝐭𝐭𝐥𝐞: [{songname}]({url})
-⏱️ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: {dura𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧tion}
+⏱️ 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧: {duration}
 💬 𝐂𝐇𝐀𝐓 𝐈𝐃: {chat_id}
 🎧 𝐏𝐥𝐚𝐲𝐞𝐝 𝐛𝐲: {m.from_user.mention}
 ❤️ 𝐎𝐰𝐧𝐞𝐫 ❤️:[𝐀𝐦𝐚𝐧](https://t.me/itzamanrajput)**
