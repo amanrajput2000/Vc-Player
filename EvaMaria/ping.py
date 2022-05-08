@@ -65,26 +65,26 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<i>🤓Hellow {m.from_user.mention}!
+<i>🤓𝗛𝗲𝗹𝗹𝗼 {m.from_user.mention}!
 
 🛠 HELP MENU
-⚡ COMMANDS
-❍ {HNDLR}help - to see a list of commands
-❍ {HNDLR}play [song title | link youtube | reply audio file] - to play a song
-❍ {HNDLR}vplay [video title | link youtube | reply video files] - to play videos
-❍ {HNDLR}playlist to view playlist
-❍ {HNDLR}ping - to check status
-❍ {HNDLR}resume - to continue playing a song or video
-❍ {HNDLR}pause - to pause the playback a song or video 
-❍ {HNDLR}skip - to skip songs or videos
-❍ {HNDLR}end - to end playback</i>
+⚡ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 🇮🇳
+🥀 {HNDLR}help - to see a list of commands
+🥀 {HNDLR}play [song title | link youtube | reply audio file] - to play a song
+🥀 {HNDLR}vplay [video title | link youtube | reply video files] - to play videos
+🥀 {HNDLR}playlist to view playlist
+🥀 {HNDLR}ping - to check status
+🥀 {HNDLR}resume - to continue playing a song or video
+🥀 {HNDLR}pause - to pause the playback a song or video 
+🥀 {HNDLR}skip - to skip songs or videos
+🥀 {HNDLR}end - to end playback</i>
 """
     await m.reply(HELP)
 
 @Client.on_message(filters.command(["Good morning", "Gud morning", "gud mrng", "ഗുഡ് മോർണിംഗ്"], prefixes=f"{HNDLR}"))
 async def goodmorning(client, m: Message):
     GM = f"""
-<i>🍂☕️Gøød Mørning..⏱️ Have a nice day..🙂</i>
+<i>🍂☕️Gøød Mørning..𝐃𝐞𝐚𝐫⏱️ 𝐇𝐚𝐯𝐞 𝐚 𝐠𝐫𝐞𝐚𝐭 𝐝𝐚𝐲..❤️</i>
 """
     await m.reply(GM)
 
@@ -92,7 +92,7 @@ async def goodmorning(client, m: Message):
 @Client.on_message(filters.command(["Good Evening", "Gud evng", "gud evening", "ഗുഡ് ഈവനിംഗ്", "ഗുഡ് ഈവെനിംഗ്"], prefixes=f"{HNDLR}"))
 async def goodevening(client, m: Message):
     GE = f"""
-<i> 😁Gøød Evening..☕️</i>
+<i> ❤️Gøød Evening ɖʀǟʀ..☕️</i>
 """
     await m.reply(GE)
 
@@ -100,6 +100,6 @@ async def goodevening(client, m: Message):
 @Client.on_message(filters.command(["Good Night", "Gud nt", "gud night", "ഗുഡ് നൈറ്റ്‌", "gudnyt"], prefixes=f"{HNDLR}"))
 async def goodnight(client, m: Message):
     GN = f"""
-<i> 😴🛌Gøød Night 🌚</i>
+<i> 😴🛌ɢօօɖ ռɨɢɦȶ ɖɛǟʀ 🌚</i>
 """
     await m.reply(GN)
